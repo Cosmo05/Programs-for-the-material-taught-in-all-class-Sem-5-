@@ -18,19 +18,9 @@ for n in range(1,51):
         u = a*sin(n*pi*x/l)*cos(w*t)
         u1.append(u)
     U.append(u1)
-print("First 50 modes are ")
-#print(np.shape(U))
-#u_sum = U.sum(axis=0)
-U1 = []
-for i in U:
-    U1.append(i)
-#print(U1)
-#u_sum = U1.sum(axis=0)
-array = np.array(U)
-#print(np.shape(array))
-u_sum = array.sum(axis = 0)
-print(np.shape(u_sum))
 
+array = np.array(U)
+u_sum = array.sum(axis = 0)
 plt.plot(dis,u_sum)
 plt.show()
      
