@@ -19,8 +19,8 @@ for n in range(1,51):
         u1.append(u)
     U.append(u1)
 
-array = np.array(U)
-u_sum = array.sum(axis = 0)
+u_array = np.array(U)
+u_sum = u_array.sum(axis = 0)
 plt.plot(dis,u_sum)
 plt.show()
      
